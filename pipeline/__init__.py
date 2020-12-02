@@ -57,7 +57,7 @@ class Stage:
 class CollectData(Stage):
     def execute(self):
         print("Collecting data")
-        self.context.data = [b * 3 for b in self.context.build_ids] * 3
+        self.context.data = [b * 3 for b in range(10)] * 3
 
 
 class ProcessingData(Stage):
